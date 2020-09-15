@@ -24,8 +24,8 @@ public class CanMove : MonoBehaviour
         if (collision.gameObject.tag == "cntr")
         {
             Debug.Log("girdi");
-            GetComponent<Renderer>().sharedMaterials = YellowMesh.sharedMaterials;
-            GetComponent<Renderer>().sharedMaterials = YellowMesh.sharedMaterials;
+            GetComponent<MeshRenderer>().sharedMaterials = YellowMesh.sharedMaterials;
+            GetComponent<MeshRenderer>().sharedMaterials = YellowMesh.sharedMaterials;
 
 
 

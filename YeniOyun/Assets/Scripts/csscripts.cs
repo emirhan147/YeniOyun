@@ -37,7 +37,7 @@ public class csscripts : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
+ 
         if(cforward)
         {
             if (collision.gameObject.tag == "canmove")
@@ -49,10 +49,12 @@ public class csscripts : MonoBehaviour
             {
                 move.canileri = false;
             }
+
         }
 
         if (cleft)
         {
+            move.cansola = false;
             if (collision.gameObject.tag == "canmove")
             {
                 move.cansola = true;
@@ -66,6 +68,7 @@ public class csscripts : MonoBehaviour
 
         if (cback)
         {
+            move.cangeri = false;
             if (collision.gameObject.tag == "canmove")
             {
                 move.cangeri = true;
@@ -79,6 +82,7 @@ public class csscripts : MonoBehaviour
 
         if (cright)
         {
+            move.cansağa = false;
             if (collision.gameObject.tag == "canmove")
             {
                 move.cansağa = true;
