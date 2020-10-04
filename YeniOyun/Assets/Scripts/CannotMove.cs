@@ -23,7 +23,7 @@ public class CannotMove : MonoBehaviour
 
         if (collision.gameObject.tag == "cntr")
         {
-            Debug.Log("girdi");
+
             GetComponent<Renderer>().sharedMaterials = BlackMesh.sharedMaterials;
             GetComponent<Renderer>().sharedMaterials = BlackMesh.sharedMaterials;
 

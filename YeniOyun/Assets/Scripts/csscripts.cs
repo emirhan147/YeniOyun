@@ -40,7 +40,7 @@ public class csscripts : MonoBehaviour
  
         if(cforward)
         {
-            if (collision.gameObject.tag == "canmove")
+            if (collision.gameObject.tag == "canmove" || collision.gameObject.tag == "finish")
             {
                 move.canileri = true;
             }
@@ -55,7 +55,7 @@ public class csscripts : MonoBehaviour
         if (cleft)
         {
             move.cansola = false;
-            if (collision.gameObject.tag == "canmove")
+            if (collision.gameObject.tag == "canmove" || collision.gameObject.tag == "finish")
             {
                 move.cansola = true;
             }
@@ -69,7 +69,7 @@ public class csscripts : MonoBehaviour
         if (cback)
         {
             move.cangeri = false;
-            if (collision.gameObject.tag == "canmove")
+            if (collision.gameObject.tag == "canmove" || collision.gameObject.tag == "finish")
             {
                 move.cangeri = true;
             }
@@ -83,7 +83,7 @@ public class csscripts : MonoBehaviour
         if (cright)
         {
             move.cansağa = false;
-            if (collision.gameObject.tag == "canmove")
+            if (collision.gameObject.tag == "canmove" || collision.gameObject.tag == "finish")
             {
                 move.cansağa = true;
             }
