@@ -1328,8 +1328,13 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   intensity:
+<<<<<<< HEAD
     overrideState: 1
     value: 10
+=======
+    overrideState: 0
+    value: 17.26
+>>>>>>> 2bbc4cadcd40cc60efe91242066d539f467f756f
   threshold:
     overrideState: 1
     value: 1
@@ -1346,8 +1351,13 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   color:
+<<<<<<< HEAD
     overrideState: 1
     value: {r: 1.7824349, g: 1.7824349, b: 1.7824349, a: 1}
+=======
+    overrideState: 0
+    value: {r: 1, g: 0.98565185, b: 0, a: 1}
+>>>>>>> 2bbc4cadcd40cc60efe91242066d539f467f756f
   fastMode:
     overrideState: 0
     value: 0
