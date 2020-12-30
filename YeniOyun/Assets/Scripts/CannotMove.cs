@@ -5,7 +5,7 @@ using UnityEngine;
 public class CannotMove : MonoBehaviour
 {
     public bool ısCanMove;
-    public Renderer BlackMesh, MainMesh;
+    public Material BlackMesh, MainMesh;
 
     void Start()
     {
@@ -24,12 +24,7 @@ public class CannotMove : MonoBehaviour
         if (collision.gameObject.tag == "cntr")
         {
 
-            GetComponent<Renderer>().sharedMaterials = BlackMesh.sharedMaterials;
-            GetComponent<Renderer>().sharedMaterials = BlackMesh.sharedMaterials;
-
-
-
-
+            GetComponent<MeshRenderer>().material = BlackMesh;
         }
     }
 
@@ -37,8 +32,7 @@ public class CannotMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "cntr")
         {
-            GetComponent<Renderer>().sharedMaterials = MainMesh.sharedMaterials;
-            GetComponent<Renderer>().sharedMaterials = MainMesh.sharedMaterials;
+            GetComponent<MeshRenderer>().material = MainMesh;
         }
 
     }

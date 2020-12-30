@@ -23,10 +23,10 @@ public class LevelScript : MonoBehaviour
 
     void Update()
     {
-        kalansayı = 9 - move.adım;
+        kalansayı = 7 - move.adım;
         kalantext.text = kalansayı.ToString();
 
-        if (move.adım > 8)
+        if (move.adım > 6)
         {
             Invoke("isfinished", 0.1f);
         }

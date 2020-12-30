@@ -17,7 +17,7 @@ public class move : MonoBehaviour
     {
         if (cansola)
         {
-            transform.position = new Vector3(transform.position.x - 5, 2.5f, transform.position.z);
+            transform.position = new Vector3(transform.position.x - 5, 5.5f, transform.position.z);
             adım += 1;
         }
     }
@@ -26,7 +26,7 @@ public class move : MonoBehaviour
     {
         if (cansağa)
         {
-            transform.position = new Vector3(transform.position.x + 5, 2.5f, transform.position.z);
+            transform.position = new Vector3(transform.position.x + 5, 5.5f, transform.position.z);
             adım += 1;
         }
     }
@@ -34,7 +34,7 @@ public class move : MonoBehaviour
     {
         if (canileri)
         {
-            transform.position = new Vector3(transform.position.x, 2.5f, transform.position.z + 5);
+            transform.position = new Vector3(transform.position.x, 5.5f, transform.position.z + 5);
             adım += 1;
         }
     }
@@ -42,7 +42,7 @@ public class move : MonoBehaviour
     {
         if (cangeri)
         {
-            transform.position = new Vector3(transform.position.x, 2.5f, transform.position.z - 5);
+            transform.position = new Vector3(transform.position.x, 5.5f, transform.position.z - 5);
             adım += 1;
         }
     }

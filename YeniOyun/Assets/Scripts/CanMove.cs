@@ -5,7 +5,7 @@ using UnityEngine;
 public class CanMove : MonoBehaviour
 {
     public bool ısCanMove;
-    public Renderer YellowMesh, MainMesh;
+    public Material YellowMesh, MainMesh;
 
     void Start()
     {
@@ -24,12 +24,7 @@ public class CanMove : MonoBehaviour
         if (collision.gameObject.tag == "cntr")
         {
 
-            GetComponent<MeshRenderer>().sharedMaterials = YellowMesh.sharedMaterials;
-            GetComponent<MeshRenderer>().sharedMaterials = YellowMesh.sharedMaterials;
-
-
-
-
+            GetComponent<MeshRenderer>().material = YellowMesh;
         }
     }
 
@@ -37,8 +32,7 @@ public class CanMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "cntr")
         {
-            GetComponent<Renderer>().sharedMaterials = MainMesh.sharedMaterials;
-            GetComponent<Renderer>().sharedMaterials = MainMesh.sharedMaterials;
+            GetComponent<MeshRenderer>().material = MainMesh;
         }
 
     }
